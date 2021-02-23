@@ -22,6 +22,20 @@ print(5 + (4 * 10) / 2) #guess 25
 print(5 + 4 * 10 // 2) # 25
 
 print(bin(5)) #bin returns binary value
+print(int('0b101',2))
+
+
+counter = 0
+
+counter += 1
+counter += 1
+counter += 1
+counter += 1
+counter -= 1
+counter *=2
+
+#Before you click RUN, guess what the counter variable holds in memory!
+print(counter) # guess 6
 #bool - true/false
 #str - string
 #list - 
