@@ -14,6 +14,15 @@ print(5%4) #remainder
 #math functions
 print(round(3.1)) #rounds number
 print(abs(-20)) #returns absolute value
+print((5 + 4) * 10 / 2) #guess 45
+
+print(((5 + 4) * 10) / 2) # guess 45
+
+print((5 + 4) * (10 / 2)) #guess 45
+
+print(5 + (4 * 10) / 2) #guess 25
+
+print(5 + 4 * 10 // 2) # 25
 #bool - true/false
 #str - string
 #list - 
