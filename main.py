@@ -38,6 +38,14 @@ counter *=2
 print(counter) # guess 6
 #bool - true/false
 #str - string
+
+#formatted strings
+name = "joelle"
+age = 3
+print(f'hi {name}, You are {age} years old' )
+print('hi {}, You are {} years old'.format(name, age))
+print('hi {1}, You are {0} years old'.format(name, age))
+print('hi {new_name}, You are {age} years old'.format(new_name='sally', age=100))
 #list - 
 #tuple
 #set
