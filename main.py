@@ -46,6 +46,9 @@ print(f'hi {name}, You are {age} years old' )
 print('hi {}, You are {} years old'.format(name, age))
 print('hi {1}, You are {0} years old'.format(name, age))
 print('hi {new_name}, You are {age} years old'.format(new_name='sally', age=100))
+
+num = '01234567'
+print(num[::-1]) #can be used to reverse a string
 #list - 
 #tuple
 #set
