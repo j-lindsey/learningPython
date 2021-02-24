@@ -49,6 +49,10 @@ print('hi {new_name}, You are {age} years old'.format(new_name='sally', age=100)
 
 num = '01234567'
 print(num[::-1]) #can be used to reverse a string
+quote = 'to be or not to be'
+
+print(quote.upper())
+print(quote.capitalize())
 #list - 
 #tuple
 #set
