@@ -63,6 +63,11 @@ birth_year = input('what year were you born? ')
 age = 2021 - int(birth_year)
 print(f'your age is {age}')
 
+username = input('What is your username? ')
+password = input ('Please enter your password ')
+sec_password = '*' * len(password)
+
+print(f'{username}, your password {sec_password} is {len(password)} letters long')
 #list - 
 #tuple
 #set
