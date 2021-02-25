@@ -53,6 +53,16 @@ quote = 'to be or not to be'
 
 print(quote.upper())
 print(quote.capitalize())
+print(quote.find('be'))#finds index of first occurance of text
+print(quote.replace('be', 'me')) #does not change the original string
+print(quote)
+
+
+#type conversions
+birth_year = input('what year were you born? ')
+age = 2021 - int(birth_year)
+print(f'your age is {age}')
+
 #list - 
 #tuple
 #set
