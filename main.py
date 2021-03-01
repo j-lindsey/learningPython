@@ -68,7 +68,6 @@ sec_password = '*' * len(password)
 print(
     f'{username}, your password {sec_password} is {len(password)} letters long'
 )
-#Data Structures
 
 #list -
 li = [1, 2, 3, 4, 5]
@@ -78,6 +77,35 @@ amazon_cart =['notebooks', 'sunglasses','toys','grapes']
 amazon_cart[0] = 'laptop'
 print(amazon_cart[0:3])#list slicing creates new list does not change original
 print(amazon_cart)
+
+# using this list: 
+basket = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+# access "Oranges" and print it:
+# You will find the answer if you scroll down to the bottom, but attempt it yourself first!
+print(basket[1][1][0])
+
+#list methods
+#adding
+basket1 = [1,2,3,4,5]
+new_list = basket1.append(100)#append changes list in place
+new_list = basket1
+print(basket1)
+print(new_list)
+basket1.insert(4,100)#modifies array in place
+print(basket1)
+basket1.extend([100,101])
+print(basket1)
+
+#removing
+basket1.pop()#removes last item
+print(basket1)
+basket1.pop(0)#removes item at 0 index
+print(basket1)
+basket1.remove(4)#removes the number 4 in the list
+print(basket1)
+basket1.clear()
+print(basket1)#removes all items in the list
+
 #tuple
 #set
 #dict
