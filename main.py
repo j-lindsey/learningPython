@@ -132,7 +132,15 @@ print(other)
 
 #tuple
 #set
-#dict
+#dictionary (hash table, objects)
+dictionary={
+  'a': 1,
+  'b': 2
+}
+
+print(dictionary['b'])
+
+
 
 #Classes - customized types
 
