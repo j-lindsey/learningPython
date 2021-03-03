@@ -103,8 +103,24 @@ basket1.pop(0)#removes item at 0 index
 print(basket1)
 basket1.remove(4)#removes the number 4 in the list
 print(basket1)
-basket1.clear()
-print(basket1)#removes all items in the list
+#basket1.clear()
+print(basket1)#removes all items in the new_list
+print(basket1.index(2))
+
+print(basket1.count(100))
+basket1.sort() #modifies existing array
+print(basket1)
+sorted(basket1)#creates  new array 
+
+basket1.reverse()
+print(basket1)
+print(basket1[::-1])#reverses list in new instance
+
+print(list(range(1,100)))
+sentence = '!'
+new_sentence = sentence.join(['hi', 'my', 'name', 'is', 'jojo'])
+
+print(new_sentence)
 
 #tuple
 #set
