@@ -71,59 +71,60 @@ print(
 
 #list -
 li = [1, 2, 3, 4, 5]
-li2 = [1, 2, 'a', True] # can have multiple variable types
-amazon_cart =['notebooks', 'sunglasses','toys','grapes']
+li2 = [1, 2, 'a', True]  # can have multiple variable types
+amazon_cart = ['notebooks', 'sunglasses', 'toys', 'grapes']
 
 amazon_cart[0] = 'laptop'
-print(amazon_cart[0:3])#list slicing creates new list does not change original
+print(
+    amazon_cart[0:3])  #list slicing creates new list does not change original
 print(amazon_cart)
 
-# using this list: 
-basket = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+# using this list:
+basket = ["Banana", ["Apples", ["Oranges"], "Blueberries"]]
 # access "Oranges" and print it:
 # You will find the answer if you scroll down to the bottom, but attempt it yourself first!
 print(basket[1][1][0])
 
 #list methods
 #adding
-basket1 = [1,2,3,4,5]
-new_list = basket1.append(100)#append changes list in place
+basket1 = [1, 2, 3, 4, 5]
+new_list = basket1.append(100)  #append changes list in place
 new_list = basket1
 print(basket1)
 print(new_list)
-basket1.insert(4,100)#modifies array in place
+basket1.insert(4, 100)  #modifies array in place
 print(basket1)
-basket1.extend([100,101])
+basket1.extend([100, 101])
 print(basket1)
 
 #removing
-basket1.pop()#removes last item
+basket1.pop()  #removes last item
 print(basket1)
-basket1.pop(0)#removes item at 0 index
+basket1.pop(0)  #removes item at 0 index
 print(basket1)
-basket1.remove(4)#removes the number 4 in the list
+basket1.remove(4)  #removes the number 4 in the list
 print(basket1)
 #basket1.clear()
-print(basket1)#removes all items in the new_list
+print(basket1)  #removes all items in the new_list
 print(basket1.index(2))
 
 print(basket1.count(100))
-basket1.sort() #modifies existing array
+basket1.sort()  #modifies existing array
 print(basket1)
-sorted(basket1)#creates  new array 
+sorted(basket1)  #creates  new array
 
 basket1.reverse()
 print(basket1)
-print(basket1[::-1])#reverses list in new instance
+print(basket1[::-1])  #reverses list in new instance
 
-print(list(range(1,100)))
+print(list(range(1, 100)))
 sentence = '!'
 new_sentence = sentence.join(['hi', 'my', 'name', 'is', 'jojo'])
 
 print(new_sentence)
 
 #list unpacking
-a,b,c, *other, d = [1,2,3,4,5,6,7,8,9]
+a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 print(a)
 print(b)
@@ -133,23 +134,57 @@ print(other)
 #tuple
 #set
 #dictionary (hash table, objects)
-dictionary={
-  'a': 1,
-  'b': 2
-}
+dictionary = {'a': 1, 'b': 2}
 
 print(dictionary['b'])
+
+user = {'basket': [1, 2, 3], 'greet': 'hello'}
+print(user.get('age'))
+print(user.get('age',
+               55))  #if age doesnt exist won't get erro when running code.
+
+print('basket' in user)
+print('basket' in user.keys())
+print(user.items())
 
 #fix this code so that it prints a sorted list of all of our friends (alphabetical). Scroll to see answer
 friends = ['Simon', 'Patty', 'Joy', 'Carrie', 'Amira', 'Chu']
 
 new_friend = ['Stanley']
 
-friends.insert(len(friends), new_friend[0])
+friends.append(new_friend[0])
 friends.sort()
 
-print(friends.sort())
+print(friends)
 
+#Scroll down to see the answers!
+#1 Create a user profile for your new game. This user profile will be stored in a dictionary with keys: 'age', 'username', 'weapons', 'is_active' and 'clan'
+userprofile = {
+  'age': 25,
+  'username':'joelle',
+  'weapons': ['axe'],
+  'is_active': True,
+  'clan': '1'
+
+}
+#2 iterate and print all the keys in the above user.
+print(userprofile.keys())
+#3 Add a new weapon to your user
+userprofile['weapons'].append('knife')
+print(userprofile)
+#4 Add a new key to include 'is_banned'. Set it to false
+userprofile['is_banned']= False #can use user.update({})
+print(userprofile)
+#5 Ban the user by setting the previous key to True
+userprofile['is_banned']=True
+print(userprofile)
+#6 create a new user2 my copying the previous user and update the age value and username value. 
+user2 = userprofile.copy()
+print(user2)
+user2['username']='John'
+user2['age']=50
+print(user2)
+print(userprofile)
 #Classes - customized types
 
 #Specialized Data Types - packages and modules from libraries
