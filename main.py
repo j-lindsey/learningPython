@@ -131,8 +131,7 @@ print(b)
 print(c)
 print(other)
 
-#tuple
-#set
+
 #dictionary (hash table, objects)
 dictionary = {'a': 1, 'b': 2}
 
@@ -173,7 +172,7 @@ print(userprofile.keys())
 userprofile['weapons'].append('knife')
 print(userprofile)
 #4 Add a new key to include 'is_banned'. Set it to false
-userprofile['is_banned']= False #can use user.update({})
+userprofile['is_banned']= False #can use user.update({'is_banned': False})
 print(userprofile)
 #5 Ban the user by setting the previous key to True
 userprofile['is_banned']=True
@@ -185,6 +184,23 @@ user2['username']='John'
 user2['age']=50
 print(user2)
 print(userprofile)
+
+#tuple are immutable
+#benefit is can't be changed, good for communicating things that aren't modified
+#faster than lists
+my_tuple=(1,2,3,4,5)
+print(my_tuple[2])
+print(5 in my_tuple)
+
+new_tuple = my_tuple[1:2]
+print(new_tuple)
+x, y, x, *other = (1,2,3,4,5)
+print(my_tuple.count(2))
+print(my_tuple.index(3))
+print(len(my_tuple))
+
+#set inordered collections of unique objects
+
 #Classes - customized types
 
 #Specialized Data Types - packages and modules from libraries
