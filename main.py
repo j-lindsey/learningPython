@@ -131,7 +131,6 @@ print(b)
 print(c)
 print(other)
 
-
 #dictionary (hash table, objects)
 dictionary = {'a': 1, 'b': 2}
 
@@ -159,12 +158,11 @@ print(friends)
 #Scroll down to see the answers!
 #1 Create a user profile for your new game. This user profile will be stored in a dictionary with keys: 'age', 'username', 'weapons', 'is_active' and 'clan'
 userprofile = {
-  'age': 25,
-  'username':'joelle',
-  'weapons': ['axe'],
-  'is_active': True,
-  'clan': '1'
-
+    'age': 25,
+    'username': 'joelle',
+    'weapons': ['axe'],
+    'is_active': True,
+    'clan': '1'
 }
 #2 iterate and print all the keys in the above user.
 print(userprofile.keys())
@@ -172,34 +170,68 @@ print(userprofile.keys())
 userprofile['weapons'].append('knife')
 print(userprofile)
 #4 Add a new key to include 'is_banned'. Set it to false
-userprofile['is_banned']= False #can use user.update({'is_banned': False})
+userprofile['is_banned'] = False  #can use user.update({'is_banned': False})
 print(userprofile)
 #5 Ban the user by setting the previous key to True
-userprofile['is_banned']=True
+userprofile['is_banned'] = True
 print(userprofile)
-#6 create a new user2 my copying the previous user and update the age value and username value. 
+#6 create a new user2 my copying the previous user and update the age value and username value.
 user2 = userprofile.copy()
 print(user2)
-user2['username']='John'
-user2['age']=50
+user2['username'] = 'John'
+user2['age'] = 50
 print(user2)
 print(userprofile)
 
 #tuple are immutable
 #benefit is can't be changed, good for communicating things that aren't modified
 #faster than lists
-my_tuple=(1,2,3,4,5)
+my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[2])
 print(5 in my_tuple)
 
 new_tuple = my_tuple[1:2]
 print(new_tuple)
-x, y, x, *other = (1,2,3,4,5)
+x, y, x, *other = (1, 2, 3, 4, 5)
 print(my_tuple.count(2))
 print(my_tuple.index(3))
 print(len(my_tuple))
 
 #set inordered collections of unique objects
+my_set = {1, 2, 3, 4, 5, 5}
+my_list = [1, 2, 3, 4, 5, 5]
+
+my_set.add(100)
+my_set.add(2)
+
+print(my_set)
+print(set(my_list))  # converts list to set of unique values
+
+print(1 in my_set) #checks if 1 exists in my_set
+your_set = {4,5,6,7,8,9,10}
+
+print(my_set.difference(your_set)) #sets out the difference doesnt modify set
+print(my_set.discard(5)) #modifies by removing value
+print(my_set)
+
+print(my_set.difference_update(your_set)) #modifies set
+print(my_set)
+
+print(my_set.intersection(your_set)) #intsection between two sets
+
+print(my_set.isdisjoint(your_set)) #are they different sets
+
+print(my_set.union(your_set)) #adds sets together without duplicates
+
+my_set = {4,5}
+print(my_set.issubset(your_set))
+
+print(my_set.issuperset(your_set))
+print(my_set.isupserset(my_set))
+
+
+
+
 
 #Classes - customized types
 
