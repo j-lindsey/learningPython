@@ -9,7 +9,6 @@ elif is_licenced:  #else if statement
 else:
     print('checkcheck')
 
-
 #ternary operator (shortcut if else)
 
 #condition_if_true if condition else condition_if_else
@@ -19,3 +18,13 @@ is_friend = True
 can_message = "message allowed" if is_friend else "not allowed to message"
 
 print(can_message)
+
+#short circuiting
+
+is_Friend = True
+is_User = True
+
+print(is_Friend and is_User)
+
+if is_Friend or is_User:
+    print('best friends forever')
