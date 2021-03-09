@@ -227,7 +227,7 @@ my_set = {4,5}
 print(my_set.issubset(your_set))
 
 print(my_set.issuperset(your_set))
-print(my_set.isupserset(my_set))
+print(your_set.isupserset(my_set))
 
 
 
