@@ -40,3 +40,9 @@ elif is_magician and not is_expert:
     print('''at least you're getting there''')
 elif not is_magician:
     print('you need magic powers')
+
+print(
+    True is 1
+)  #is checks whether value stored in same location == checks value is same with type conversion
+
+print('1' is '1')
