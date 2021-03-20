@@ -43,6 +43,26 @@ elif not is_magician:
 
 print(
     True is 1
-)  #is checks whether value stored in same location == checks value is same with type conversion
+)  #is checks whether value stored in same location == checks value is same with type conversion is checks exact similar to === in javascript
 
 print('1' is '1')
+
+for item in 'Zero to Mastery':
+    print(item)
+
+for item in [1, 2, 3, 4, 5]:
+    print(item)
+
+user = {'name': 'Golem', 'age': 5006, 'can_swim': False}
+
+for item in user:
+    print(item)
+
+for item in user.items():
+    print(item)
+
+for item in user.values():
+    print(item)
+
+for item in user.keys():
+    print(item)
