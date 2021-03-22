@@ -77,3 +77,18 @@ for item in my_list:
     sum += item
 
 print(sum)
+
+#range
+print(range(100))
+
+for number in range(0, 50):
+    print(number)
+
+for _ in range(0, 10):  #_ is typically used when don't care about value
+    print(_)
+
+for _ in range(0, 10, 2):
+    print(_)
+
+for _ in range(2):
+  print(list(range(10)))
