@@ -3,10 +3,21 @@
 picture = [[0, 0, 0, 1, 0, 0, 0], [0, 0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 1, 1, 0],
            [1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0]]
 
-for i, char in enumerate(picture):
-    for value in picture[i]:
+for item in picture:
+    for value in item:
         if value == 0:
             print(' ', end='')
         if value == 1:
             print('*', end='')
-    print('')
+    print('')  #need a new line after every row
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+duplicates = []
+
+for item in some_list:
+    if some_list.count(item) > 1:
+        if item not in duplicates:
+            duplicates.append(item)
+
+print(duplicates)
