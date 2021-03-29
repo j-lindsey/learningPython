@@ -91,11 +91,17 @@ for _ in range(0, 10, 2):
     print(_)
 
 for _ in range(2):
-  print(list(range(10)))
+    print(list(range(10)))
 
 for i, char in enumerate('Hellooooo'):
-  print(i, char)
+    print(i, char)
 
 for i, char in enumerate(list(range(100))):
-  if char == 50:
-    print(i, char)
+    if char == 50:
+        print(i, char)
+i = 0
+while i < 50:
+    print(i)
+    i += 1
+else:
+    print('done with all the work')
