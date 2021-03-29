@@ -92,3 +92,10 @@ for _ in range(0, 10, 2):
 
 for _ in range(2):
   print(list(range(10)))
+
+for i, char in enumerate('Hellooooo'):
+  print(i, char)
+
+for i, char in enumerate(list(range(100))):
+  if char == 50:
+    print(i, char)
