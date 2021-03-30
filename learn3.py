@@ -21,3 +21,17 @@ for item in some_list:
             duplicates.append(item)
 
 print(duplicates)
+
+
+def say_hello():
+    print('hello')
+
+
+say_hello()
+
+
+def say_hello1(name, emoji):
+    print(f'hellooo {name} {emoji}')
+
+
+say_hello1('Andrei', 'smiley')
